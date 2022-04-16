@@ -1,0 +1,1352 @@
+            
+            /* --- CONFIGURAÇÕES GERAIS --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.robo {
+    font-family: 'Roboto', sans-serif;
+}
+
+.quick {
+    font-family: 'Quicksand', sans-serif;    
+}
+
+.bold {
+    font-weight: 700;    
+}
+
+.curs_pointer {
+    cursor: pointer;
+}
+
+.hidden_box {
+    display: none;
+}
+
+
+            /* --- MENU LATERAL FIXO --- */
+
+#side-menu {    
+    position: fixed;
+    width: 220px;   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1;   
+} 
+
+#side-bar {            
+    width: 100%;
+    height: 536px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#slaca {
+    position: relative;   
+    width: 220px;
+    height: 68px;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+}
+
+#slaca p {
+    width: 100%;
+    height: 68px;        
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: 700;
+    font-size: 30px;     
+}
+
+#logo_slaca {
+    width: 220px;   
+}
+
+li {
+    list-style: none;
+    width: 220px;    
+    height: 33px;
+    color:  #725C5C; 
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 2px solid rgb(236, 229, 229);
+    display: flex;
+    align-items: center;
+    padding-left: 24px;  
+    transition: 0.3s;  
+}
+
+li:hover {
+    padding-left: 29px;
+    background-color: #FDF1EB;
+}
+
+a {    
+    text-decoration: none;
+    color: #725C5C; 
+}
+
+
+/* --- CABEÇALHO, IDIOMA E LOGIN --- */
+
+header {    
+    width: 100%;
+    height: 68px;
+    padding-left: 256px;
+    padding-right: 36px;
+    background-color:rgba(253,241, 235, 1);    
+}
+
+#anais {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(114, 92, 92, 1);
+}
+
+#anais13 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+button {    
+    width: 97px;
+    height: 34px;
+    background-color:rgba(253,241, 235, 1);
+    border: 1px solid #CCCCCC;   
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+    padding: 0px 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+
+button img {
+    width: 22px;
+    height: 21px;
+}
+
+button #down {
+    width:6px;
+    height: 4px;
+}
+
+#lang_login {
+    display: flex;    
+}
+
+#wellcome {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+
+#email {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+}
+
+#login {   
+    width: 202px;
+    height: 34px;
+    display: flex;
+    text-align: right;      
+}
+
+#login img {
+    height: 30px;
+    padding-left: 5px;   
+}
+
+
+            /* --- CORPO GERAL --- */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content {    
+    width: 100%;        
+    padding-left: 263px;
+    padding-right: 45px;     
+    margin-top: 30px; 
+}
+
+            /* --- CORPO - TÍTULO E BOTÕES LATERAIS --- */
+
+#title p {  
+    width: 783px;  
+    font-weight: 900;
+    font-size: 20px;
+    color: #ED7839;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+.buttons {   
+    width: 239px;   
+    font-weight: 500;       
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    height: 100%;
+    background-color: #ED7839;
+    margin: 0px 5px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;     
+    display: flex;
+    padding: 6px 12px;
+}
+
+.btn img {
+    width: 19px;
+}
+
+#btn_text {
+    color: #ED7839;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+            /* --- CORPO - VÍDEO E LATERAL "DETALHES" --- */
+
+#vid_box {
+    max-width: 783px;
+    width: 100%; 
+    max-height: 439px;      
+  }
+  
+  #sec_video {
+      position: relative;
+      background-color: black;
+      height: 0px;
+      max-width: 783px;        
+      padding-bottom: 59%;       
+  }
+
+  iframe {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;  
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#vid_det {
+    margin-top: 20px;       
+}
+
+#det_work {
+    max-width: 242px;
+    min-width: 242px;
+    height: 462px;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 22px;
+    margin-left: 100px;    
+}
+
+#details {
+    font-weight: 500;
+    font-size: 20px;    
+    display: flex;
+    align-items: center;
+    color: #4E4E4E;
+    padding: 11px 15px 9px 15px;
+    background: #FDF1EB;
+    border-bottom: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0px 0px;
+}
+
+#pres_type {
+    margin: 15px;
+    overflow-y: scroll;
+    height: 350px;
+}
+
+#presentation {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16.8px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+}
+
+#autors {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+    margin-top: 20px;
+}
+
+#univer {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16.8px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+    margin-top: 30px;
+}
+
+            /* --- CORPO - RESUMO --- */
+
+#resume {
+    width: 100%;           
+    margin: 30px 0px;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;        
+}
+
+#resume_header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #4E4E4E;
+    background: #FDF1EB;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0px 0px;
+    height: 45px;
+    padding-left: 15px;
+}
+
+#lorem {
+    padding: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    color: #5C5C5C;    
+}
+
+.see_more {
+    color:#ED7839;
+    font-weight: bold;    
+}
+
+.expanded {
+    display: none;
+}
+
+#trigger_input:checked + .trigger_wrapper .collapsed {
+    display: none;
+}
+
+#trigger_input:checked + .trigger_wrapper .expanded {
+    display: block;
+}
+
+
+            /* CORPO - DISCUSSÃO - CABEÇALHO */
+
+#discuss {    
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px; 
+    border-bottom: white;   
+}
+
+#discuss_header {
+    background: #FDF1EB;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #4E4E4E;
+    padding: 10px 16px;
+}
+
+/* --- CORPO - DISCUSSÃO - CRIAR - COMPARTILHAR */
+
+#share {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ED7839;
+    justify-content: center;
+    margin: 15px;
+}
+
+#discuss_icons {
+    justify-content:center;
+}
+
+#discuss_icons img {
+    width: 55.95px;
+    height: 57.25px;
+    margin: 20px 22px 35px 22px;
+}
+
+#discuss_text {    
+    font-weight: 400;
+    font-size: 14px;
+    height: 19px;
+    text-align: center;    
+    color: #595959;
+}
+
+#line {
+    position: relative;
+    width: 97%;
+    border-bottom: 1px solid #E7E7E7;
+    margin-top: 35px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topic_btn {
+    position: absolute;    
+    top: -18px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;   
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    padding: 6px 14px 11px 14px;      
+}
+
+#topic_btn img {
+    height: 16px;
+    margin-right: 6px;
+    margin-top: 2px
+}
+
+.discuss_form {
+    display: none;
+}
+
+#trigger_discuss:checked + .trigger_wrapper .discuss_open {
+    display: none;
+}
+
+#trigger_discuss:checked + .trigger_wrapper .discuss_form {
+    display: block;
+}
+
+#trigger_discuss2:checked + .trigger_wrapper2 .discuss_form {
+    display: none;
+}
+
+#trigger_discuss2:checked + .trigger_wrapper2 .sent_form {
+    display: block;
+}
+
+/*    */
+
+#share_form {
+    font-weight: 400;
+    font-size: 14px;  
+    margin-top: 15px;     
+    color: #5C5C5C;
+    flex-direction:column;
+    text-align: center; 
+}
+
+#subject {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ED7839;
+    margin-top: 15px;
+    margin-left: 16px;
+}
+
+#text_define {
+    margin-left: 17.53px;
+    padding: 11px 0px 11px 23.13px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4D4D4D
+}
+
+#content_text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ED7839;
+    margin-top: 10px;
+    margin-left: 17.53px;
+}
+
+#content_form {
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 113px;
+    margin-left: 17.53px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#submit_bar {
+    background: #EAF1F2;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px;
+    width: 100%;
+    height: 31px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#btn_send {
+    width: 205.1px;
+    height: 31px; 
+    text-align: center;
+    padding-top: 5px;
+    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+    border-radius: 0px 0px 4px 0px; 
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;  
+    color: #FFFFFF;  
+     
+}
+
+#icons_BI img {
+    width: 12.34px;
+    height: 10px;
+    margin-left: 30px;
+    margin-top: 10px;    
+}
+
+.sent_form {
+    display: none;
+}
+
+#trigger_send_topic:checked + .trigger_wrapper .sent_form {
+    display: block;
+}
+
+#trigger_send_topic:checked + .trigger_wrapper .discuss_form {
+    display: none;
+}
+
+#sent_topic {   
+    
+    background-color: white;     
+}
+
+#success {
+    width: 100%;
+    padding: 15px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;    
+    color: #ED7839;       
+}
+
+#contrib_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #595959;
+    padding-top: 3px;    
+}
+
+#works {
+    padding-top: 29px;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #F48F44;
+    
+}
+
+#line2 {
+    position: relative;
+    width: 97%;
+    border-bottom: 1px solid #E7E7E7;
+    margin-top: 75px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#new_topic_btn {
+    position: absolute;    
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;   
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    padding: 6px 14px 11px 14px;        
+}
+
+#feedback {
+    margin: 30px 15px;    
+}
+
+#feedback_content {
+    flex-direction: column;    
+    height: 148px;
+    justify-content: center;
+    background: rgba(221, 221, 221, 0.9);
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 4px;    
+}
+
+.feedback_elements {
+    margin: 4px;
+}
+
+#autors_fb {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #707070;
+}
+
+.edit_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #ED7839;
+    font-family: 'Segoe UI', 'Times New Roman', sans-serif;    
+}
+
+.edit_text p {
+    margin-right: 20px;    
+}
+
+.discuss_form2 {
+    display: none;
+}
+ 
+#trigger_discuss3:checked + .trigger_wrapper3 .sent_form {
+    display: none;
+}
+
+#trigger_discuss3:checked + .trigger_wrapper3 .discuss_form2 {
+    display: block;
+}
+
+#trigger_discuss4:checked + .trigger_wrapper4 .new_form {
+    display: none;
+}
+
+#trigger_discuss4:checked + .trigger_wrapper4 .discuss_open {
+    display: block;
+}
+
+
+/*   FAQ    */
+
+#faq {
+    margin-left: 263px;
+    margin-right: 45px;
+    border: 1px solid #ECECEC;
+    border-top: white;
+}
+
+.ask_container {
+    margin-left: 24.17px;
+    padding-bottom: 18px;
+}
+
+.ask_border {    
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+#gap_border {
+    height: 30px;
+    margin-left: 263px;
+    margin-right: 45px;
+    border-left: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+}
+
+.ask1 {
+    margin: 0px 15px 14px 15px;    
+}
+
+.ask2 {
+    margin: 10px 15px 0px 15px;
+}
+
+.subject_text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED7839;
+    margin-top: 17px;
+}
+
+.carlos_text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+    margin-top: 3px;
+}
+
+.start_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4D4D4D;
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+
+.ask_icons {
+    display: flex;   
+}
+
+.heart_icon {  
+    height: 22px;       
+}
+
+.ask_font {
+    font-family: 'Segoe UI', 'Times New Roman', sans-serif;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 19px;
+    color: #757575;
+    margin-left: 15px;
+}
+
+.ask_expanded {
+    display: none;
+}
+
+#trigger_ask:checked + .trigger_wrapper .ask_collapsed {
+    display: none;
+}
+
+#trigger_ask:checked + .trigger_wrapper .ask_expanded {
+    display: block;
+}
+
+.answer_box {
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 0px;
+    margin: 0px 15px;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+#answer_box_white {
+    background-color: white;
+}
+
+.name_text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+    margin-left: 23.19px;
+    margin-top: 18px;
+}
+
+.answer_name {
+    margin-top: 18px;
+    margin-left: 23.19px;
+}
+
+.answer_autor {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ED7839;
+    margin-right: 30px;
+}
+
+.answer_icons {
+    margin-right: 23.20px;   
+    margin-top: 18px;
+    display: flex; 
+}
+
+.people_answer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4D4D4D;
+    margin: 10px 0px 10px 23.19px;    
+}
+
+footer {
+    margin-left: -30px;
+}
+
+footer img {   
+    width:100%;
+    margin-top: 50px;
+}
+
+/* responsividade */
+
+@media(max-width: 1340px) {
+    #side-menu {
+        width: 160px;
+    }
+    #slaca {
+        width: 160px;
+        height: 60px;
+    }
+    #slaca p {
+        font-size: 22px;
+        height: 60px;
+    }
+    #logo_slaca {
+        width: 160px;   
+    }
+    li {        
+        width: 160px;         
+        font-size: 13px;               
+    }
+    header {           
+        padding-left: 196px;
+        height: 60px;
+        padding-right: 15px;
+    }
+    #anais {    
+        font-size: 10px;    
+    }
+    #anais13 {    
+        font-size: 18px;
+    }
+    #lang_login {
+        margin-top: 12px;
+    }
+    button {    
+        width: 85px;
+        height: 30px; 
+        font-size: 12px;       
+        padding: 0px 3px;        
+    }    
+    button img {
+        width: 20px;
+        height: 19px;
+    } 
+    #wellcome {        
+        font-size: 12px;
+        line-height: 16px;
+       
+    }    
+    #email {        
+        font-size: 10px;
+        line-height: 13px;
+        color: #333333;    }    
+    #login {   
+        width: 202px;
+        height: 34px;
+        display: flex;
+        text-align: right;      
+    }    
+    #login img {
+        height: 30px;
+        padding-left: 5px;   
+    }
+    #content {                  
+        padding-left: 200px;
+        padding-right: 24px;     
+        margin-top: 20px; 
+    }
+    #title p {  
+        width: 90%;        
+        font-size: 14px;       
+        line-height: 21px;       
+    }
+    .btn {        
+        margin: 0px 2px;        
+        font-size: 12px;         
+        padding: 4px 8px;
+    }    
+    .btn img {
+        width: 16px;
+    }    
+    #btn_text {        
+        font-size: 11px;       
+    }
+    #det_work {
+        max-width: 160px;
+        min-width: 160px;       
+    }    
+    #details {        
+        font-size: 16px;           
+    }       
+    #presentation {        
+        font-size: 10px;
+        line-height: 14.8px;        
+    }    
+    #autors {      
+        font-size: 12px;
+        line-height: 18px;        
+        margin-top: 18px;
+    }    
+    #univer {        
+        font-size: 10px;
+        line-height: 14.8px;
+        letter-spacing: 0.02em;
+        color: #5C5C5C;
+        margin-top: 25px;
+    }
+    #vid_det {
+        margin-top: 5px;       
+    }
+    #resume_header {        
+        font-size: 15px;
+        line-height: 15px;       
+        height: 35px;      
+    }
+    #lorem {       
+        font-size: 12px;
+        line-height: 21px;          
+    }
+    #discuss_header {        
+        font-size: 15px;
+        line-height: 15px;       
+    }
+    #share {        
+        font-size: 15px;       
+    }      
+    #discuss_icons img {
+        width: 45.95px;
+        height: 47.25px;
+        margin: 10px 12px 25px 12px;
+    }    
+    #discuss_text {           
+        font-size: 12px;       
+    }
+    #topic_btn {                 
+        font-size: 15px;         
+    }    
+    #topic_btn img {
+        height: 14px;        
+    }
+    #share_form {        
+        font-size: 12px;         
+    } 
+    #subject {        
+        font-size: 14px;
+        line-height: 16px;        
+    }    
+    #text_define {       
+        font-size: 13px;       
+    }    
+    #content_text {      
+        font-size: 14px;      
+    }
+    #btn_send {
+        width: 170px;       
+        font-size: 13px;
+        line-height: 14px;                  
+    }    
+    #icons_BI img {
+        width: 10.34px;
+        height: 10px;         
+    }
+    #sent_topic {
+        padding-bottom: 11px;
+    }
+    #success {        
+        font-size: 16px;
+        line-height: 18px;       
+    }
+    #contrib_text {        
+        font-size: 12px;
+        line-height: 19px;        
+        padding-top: 0px;    
+    }
+    #works {
+        padding-top: 22px;
+        font-size: 12px;        
+    }    
+    #new_topic_btn {       
+        font-size: 14px;        
+        padding: 6px 14px 11px 14px;             
+    }
+    .feedback_elements {
+        margin: 2px;
+    }
+    
+    #autors_fb {       
+        font-size: 14px;
+        line-height: 17px;       
+    }
+    
+    .edit_text {        
+        font-size: 12px;        
+    }    
+    .edit_text p {
+        margin-right: 15px;    
+    }
+    #faq {
+        margin-left: 200px;
+        margin-right: 24px;      
+    }       
+    #gap_border {
+        height: 30px;
+        margin-left: 200px;
+        margin-right: 24px;       
+    }
+    
+    .ask1 {
+        margin: 0px 15px 14px 15px;    
+    }   
+    .subject_text {       
+        font-size: 13px;       
+        margin-top: 15px;
+    }    
+    .carlos_text {       
+        font-size: 10px;
+        line-height: 15px;       
+    }    
+    .start_text {        
+        font-size: 12px;
+        line-height: 15px;       
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }        
+    .heart_icon {  
+        height: 18px;       
+    }    
+    .ask_font {       
+        font-size: 11px;       
+    }
+    .name_text {        
+        font-size: 10px;        
+        margin-top: 10px;
+    }    
+    .answer_name {
+        margin-top: 14px;       
+    }    
+    .answer_autor {        
+        font-size: 11px;        
+        margin-right: 15px;
+    }    
+    .answer_icons img {
+        height: 15px;    
+    }    
+    .people_answer {        
+        font-size: 11px;
+        line-height: 12px;        
+        margin: 3px 0px 10px 23.19px;    
+    }    
+}
+
+@media(max-width: 1065px) {
+    #side-menu {
+        width: 80px;
+    }
+    #slaca {
+        width: 80px;
+        height: 60px;
+    }
+    #slaca p {
+        font-size: 10px;
+        height: 60px;
+    }
+    #logo_slaca {
+        width: 60px;   
+    }
+    li {        
+        width: 80px;    
+        height: 23px;     
+        font-size: 8px;
+        padding-left: 10px;               
+    }
+    header {           
+        padding-left: 95px;
+        height: 80px;
+        padding-right: 15px;
+    }
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;          
+    }
+    #anais {    
+        font-size: 8px;    
+    }
+    #anais13 {    
+        font-size: 11px;
+    }
+    #lang_login {
+        margin-top: 7px;
+    }
+    button {    
+        width: 65px;
+        height:20px; 
+        font-size: 9px;       
+        padding: 0px 3px;        
+    }    
+    button img {
+        width: 13px;
+        height: 15px;
+    } 
+    #wellcome {        
+        font-size: 10px;
+        line-height: 6px;       
+    }    
+    #email {        
+        font-size: 8px;
+        line-height: 13px;
+        color: #333333;   
+    }   
+    #lang_login {
+        display: flex;  
+        justify-content: space-between;
+        width: 100%;
+        padding-right:30px;
+    } 
+    #login {   
+        width: 100px;
+        height: 34px;
+        display: flex;
+        align-content: center;      
+    }    
+    #login img {
+        height: 25px;
+        padding-left: 5px;   
+    }
+    #content {   
+        width: 100%;               
+        padding-left: 100px;
+        padding-right: 20px;          
+        margin-top: 10px; 
+        }
+    #title_box .container {
+        flex-direction: column;
+        text-align: justify;        
+    }
+    #title p {  
+        width: 100%;        
+        font-size: 10px;       
+        line-height: 15px;       
+    }
+    .buttons {
+        width: 80%;
+        justify-content: center;
+    }
+    .btn {        
+        margin: 10px 2px 2px 0px;        
+        font-size: 12px;         
+        padding: 4px 8px;
+    }    
+    .btn img {
+        width: 15px;
+    }    
+    #btn_text {        
+        font-size: 11px;       
+    }      
+    #vid_box {       
+        margin-top: 20px;      
+      }    
+    #vid_det {
+        flex-direction: column;
+        text-align: justify;
+    }   
+    #det_work {
+        max-width: 100%;
+        margin: 40px 0px;           
+        height: 250px;  
+    }    
+    #details {        
+        font-size: 15px;
+        width: 100%;          
+    }
+    #pres_type {        
+        height: 180px;
+    }       
+    #presentation {        
+        font-size: 10px;
+        line-height: 14.8px;        
+    }    
+    #autors {      
+        font-size: 12px;
+        line-height: 18px;        
+        margin-top: 18px;
+    }    
+    #univer {        
+        font-size: 10px;
+        line-height: 14.8px;
+        letter-spacing: 0.02em;
+        color: #5C5C5C;
+        margin-top: 25px;
+    }
+    #vid_det {
+        margin-top: 5px;       
+    }
+    #resume_header {        
+        font-size: 15px;
+        line-height: 15px;       
+        height: 35px;      
+    }
+    #resume {
+        margin-top: 0px;
+    }
+    #lorem {       
+        font-size: 12px;
+        line-height: 21px;          
+    }
+    #discuss_header {        
+        font-size: 15px;
+        line-height: 15px;       
+    }
+    #share {        
+        font-size: 12px;       
+    }      
+    #discuss_icons img {
+        width: 40.95px;
+        height: 42.25px;
+        margin: 10px 12px 25px 12px;
+    }    
+    #discuss_text {           
+        font-size: 10px;       
+    }
+    #topic_btn {                 
+        font-size: 12px;         
+    }    
+    #topic_btn img {
+        height: 12px;        
+    }
+    #share_form {        
+        font-size: 10px;         
+    } 
+    #subject {        
+        font-size: 12px;
+        line-height: 16px;        
+    }    
+    #text_define {       
+        font-size: 11px;       
+    }    
+    #content_text {      
+        font-size: 12px;      
+    }
+    #btn_send {
+        width: 170px;       
+        font-size: 12px;
+        line-height: 10px; 
+        padding-top: 10px;                 
+    }    
+    #icons_BI img {
+        width: 8.34px;
+        height: 8px;         
+    }
+    #sent_topic {
+        padding-bottom: 22px;
+    }
+    #success {        
+        font-size: 14px;
+        line-height: 18px;       
+    }
+    #contrib_text {        
+        font-size: 10px;
+        line-height: 19px;        
+        padding: 0px 10px;    
+    }
+    #works {
+        padding-top: 12px;
+        font-size: 12px;        
+    }  
+    #line2 {
+        margin-top: 30px;
+    }  
+    #new_topic_btn {       
+        font-size: 12px;        
+        padding: 6px 14px 11px 14px;             
+    }
+    #feedback {
+        margin-top: 50px;
+    }   
+    .feedback_elements {
+        margin: 2px;
+    }    
+    #autors_fb {       
+        font-size: 14px;
+        line-height: 17px;       
+    }    
+    .edit_text {        
+        font-size: 12px;        
+    }    
+    .edit_text p {
+        margin-right: 15px;    
+    }
+    #faq {
+        margin-left: 100px;
+        margin-right: 20px;      
+    }       
+    #gap_border {
+        height: 30px;
+        margin-left: 100px;
+        margin-right: 20px;       
+    }
+    
+    footer img {   
+        width:100%;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+
+
